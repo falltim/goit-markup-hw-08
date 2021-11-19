@@ -1,0 +1,22 @@
+
+.second-section-section{
+    padding-top: 94px;
+  }
+  
+  .title-section-text:not(:last-child){
+    margin-right: 30px;
+  }
+  
+  .second-pre-section{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .sub-section {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+  }
