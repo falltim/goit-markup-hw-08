@@ -22,7 +22,7 @@
   </head>
   <!-----------------------body----------------------------->
   <body>
-    <header class="page-header">
+    <header class="header">
       <div class="container header-container">
         <a href="./index.html" class="logo link"
           ><span class="logo-web">Web</span>Studio
@@ -44,13 +44,13 @@
             </li>
           </ul>
         </nav>
-        <!-- --------------------------------------Mobile-men-------------------------- -->
-        <button class="burger-btn" data-menu-open>
+        <!-- --------------------------------------Mobile-menu-------------------------- -->
+        <button class="burger-btn" data-menu-open >
           <svg class="burger-btn-icon">
             <use href="./images/icon.svg#icon-menu"></use>
           </svg>
         </button>
-        <div class="mobile-menu is-open" data-menu>
+        <div class="mobile-menu" data-menu >
           <button class="close-btn" data-menu-close>
             <svg class="close-btn-icon">
               <use href="./images/icon.svg#icon-close"></use>
@@ -111,7 +111,6 @@
             </ul>
           </div>
         </div>
-
         <!-- -------------------------------------Mobile-menu-End---------------------- -->
         <div class="contact">
           <ul class="contact__list list">
@@ -136,10 +135,10 @@
       </div>
     </header>
     <!-------------------------main------------------------------>
-    <!-- <main>
+    <main>
         <section class="page-section">
             <div class="container page-section-container">
-            <h1 class="main-title main-title-text">
+            <h1 class="main-title">
                 Эффективные решения для вашего бизнеса
             </h1>
             <button type="button" class="main-btn main-btn-item" data-modal-open>
@@ -147,12 +146,12 @@
             </button>
             </div>
         </section>
-        <section class="second-section second-section-section">
+        <section class="second-section">
             <div class="container based-container">
                 <h2 class="visually-hidden">Почему так</h2>
-                <ul class="title-section-icon">
-                <li class="title-icon-item list">
-                    <a href="" class="title-icon-block">
+                <ul class="title-section">
+                <li class="title-icon__list list">
+                    <a href="" class="title-icon__item">
                     <svg class="block-item"
                         width="70"
                         hight="70"
@@ -161,9 +160,16 @@
                         </use>
                     </svg>
                     </a>
+                    <h3 class="sub-section second-sub-section">
+                        Внимание к деталям
+                        </h3>
+                        <p class="section-text second-section-text">
+                        Идейные соображения, а также начало повседневной работы по
+                        формированию позиции.
+                        </p>
                 </li>
-                <li class="title-icon-item list">
-                    <a href="" class="title-icon-block">
+                <li class="title-icon__list list">
+                    <a href="" class="title-icon__item">
                     <svg class="block-item"
                         width="70"
                         hight="70"
@@ -172,9 +178,14 @@
                         </use>
                     </svg>
                     </a>
+                    <h3 class="sub-section second-sub-section">Пунктуальность</h3>
+                    <p class="section-text second-section-text">
+                    Задача организации, в особенности же рамки и место обучения
+                    кадров влечет за собой.
+                    </p>
                 </li>
-                <li class="title-icon-item list">
-                    <a href="" class="title-icon-block">
+                <li class="title-icon__list list">
+                    <a href="" class="title-icon__item">
                     <svg class="block-item"
                         width="70"
                         hight="70"
@@ -183,9 +194,14 @@
                         </use>
                     </svg>
                     </a>
+                    <h3 class="sub-section second-sub-section">Планирование</h3>
+                    <p class="section-text second-section-text">
+                    Равным образом консультация с широким активом в значительной
+                    степени обуславливает.
+                    </p>
                 </li>
-                <li class="title-icon-item list">
-                    <a href="" class="title-icon-block">
+                <li class="title-icon__list list">
+                    <a href="" class="title-icon__item">
                     <svg class="block-item"
                         width="70"
                         hight="70"
@@ -194,45 +210,18 @@
                         </use>
                     </svg>
                     </a>
-                </li>
-                </ul>
-                <ul class="pre-section list second-pre-section">
-                <li class="title-section-text">
-                    <h3 class="sub-section second-sub-section">
-                    Внимание к деталям
+                    <h3 class="sub-section">
+                        Современные технологии
                     </h3>
-                    <p class="section-text second-section-text">
-                    Идейные соображения, а также начало повседневной работы по
-                    формированию позиции.
-                    </p>
+                        <p class="section-text">
+                        Значимость этих проблем настолько очевидна, что реализация
+                        плановых заданий.
+                        </p>
                 </li>
-                <li class="title-section-text">
-                    <h3 class="sub-section second-sub-section">Пунктуальность</h3>
-                    <p class="section-text second-section-text">
-                    Задача организации, в особенности же рамки и место обучения
-                    кадров влечет за собой.
-                    </p>
-                </li>
-                <li class="title-section-text">
-                    <h3 class="sub-section second-sub-section">Планирование</h3>
-                    <p class="section-text second-section-text">
-                    Равным образом консультация с широким активом в значительной
-                    степени обуславливает.
-                    </p>
-                </li>
-                <li class="title-section-text">
-                    <h3 class="sub-section second-sub-section">
-                    Современные технологии
-                    </h3>
-                    <p class="section-text second-section-text">
-                    Значимость этих проблем настолько очевидна, что реализация
-                    плановых заданий.
-                    </p>
-                </li>
-                </ul>
+                
             </div>
         </section>
-        <section class="section-image">
+        <!-- <section class="section-image">
             <h2 class="pre-title second-pre-title">Чем мы занимаемся?</h2>
             <div class="container image-container">
                 <ul class="list image image-title">
@@ -276,15 +265,15 @@
                 </ul>
             </div>
             </div>
-        </section>
+        </section>  -->
         <section class="third-section">
             <div class="container third-section-container">
-            <h2 class="th-section">Наша команда</h2>
-            <ul class="list image image-section">
+            <h2 class="third-section__title">Наша команда</h2>
+            <ul class="list third-section__list">
                 <div class="image-text">
-                <li class="box-image">
+                <li class="third-section__item">
                     <img class="image-item"
-                    src="./images/img-smg.jpg"
+                    src="./images/team-1-desktop.webp"
                     alt="Игорь Демьяненко"
                     width="270"
                     height="260"
@@ -344,7 +333,7 @@
                 </li>
                 </div>
                 <div class="image-text">
-                <li class="box-image">
+                <li class="third-section__item">
                     <img class="image-item"
                     src="./images/img-gl.jpg"
                     alt="Ольга Репина"
@@ -406,7 +395,7 @@
                 </li>
                 </div>
                 <div class="image-text">
-                <li class="box-image">
+                <li class="third-section__item">
                     <img class="image-item"
                     src="./images/img-dsr.jpg"
                     alt="Николай Тарасов"
@@ -468,7 +457,7 @@
                 </li>
                 </div>
                 <div class="image-text">
-                <li class="box-image">
+                <li class="third-section__item">
                     <img class="image-item"
                     src="./images/img-gr.jpg"
                     alt="Михаил Ермаков"
@@ -531,7 +520,7 @@
                 </div>
             </ul>
         </section>
-        <section class="section-client">
+        <!-- <section class="section-client">
         <div class="container">
             <h2 class="client">Постоянные клиенты</h2>
             <ul class="client-title">
@@ -608,9 +597,9 @@
                 </li>
             </ul>
         </div>  
-        </section>
+        </section> -->
         </main>
-        <footer class="type-footer">
+        <!-- <footer class="type-footer">
         <section class="section-footer">
         <div class="container main-footer-container">
             <div class="contact-info">
