@@ -27,333 +27,594 @@
   <body>
     <header class="header">
       <div class="container header-container">
-        <a href="./index.html" class="logo link"
-          ><span class="logo-web">Web</span>Studio
-        </a>
-          <nav class="header-nav">
-            <ul class="list header-nav__list">
-              <li class="header-nav__item">
-                <a class="header-nav__link link" href="./index.html">Студия</a>
-              </li>
-              <li class="header-nav__item">
-                <a class="header-nav__link link current" href="./portfolio.html">Портфолио</a>
-              </li>
-              <li class="header-nav__item">
-                <a class="header-nav__link link" href="">Контакты</a>
-              </li>
-            </ul>
-          </nav>
+        <nav class="header__nav">
+          <a href="./index.html" class="header_logo link"
+            ><span class="logo-web">Web</span>Studio
+          </a>
+          <ul class="list header__nav-list">
+            <li class="header__nav-item">
+              <a class="header__nav-link link " href="./index.html"
+                >Студия</a
+              >
+            </li>
+            <li class="header__nav-item header__nav-item--current">
+              <a class="header__nav-link link header__nav-link--current" href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
         <div class="contact">
           <ul class="contact__list list">
-            <li class="contact__item contact__text">
-              <a class="contact__link link" href="mailto:info@devstudio.com"
-                >
-                <svg class="contact__nav"
-                  width="16"
-                  height="12" 
-                >
-                  <use href="./images/icon.svg#icon-envelope">
-                  </use>
+            <li class="contact__item">
+              <a class="contact__link link" href="mailto:info@devstudio.com">
+                <svg class="contact__icon" width="16" height="12">
+                  <use href="./images/icon.svg#icon-envelope"></use>
                 </svg>
                 info@devstudio.com
               </a>
             </li>
             <li class="contact__item contact__text">
               <a class="contact__link link" href="tel:+380961111111">
-                <svg class="contact__nav"
-                  width="10"
-                  height="16"
-                >
-                  <use href="./images/icon.svg#icon-phone">
-                  </use>
+                <svg class="contact__icon" width="10" height="16">
+                  <use href="./images/icon.svg#icon-phone"></use>
                 </svg>
-                +38 096 111 11 11</a>
+                +38 096 111 11 11</a
+              >
             </li>
           </ul>
         </div>
-      </div>
+        <!-- --------------------------------------Mobile-button-------------------------- -->
+    <button class="burger__btn" data-menu-open >
+        <svg class="burger__btn-icon">
+            <use href="./images/icon.svg#icon-menu"></use>
+        </svg>
+    </button>
+    <div class="mobile-menu" data-menu >
+        <button class="close-btn" data-menu-close>
+            <svg class="close-btn-icon">
+                <use href="./images/icon.svg#icon-close"></use>
+            </svg>
+        </button>
+<!-- ------------------------------------------Mobile-menu------------------------------------------ -->
+        <div class="menu__nav">
+            <nav class="header__nav">
+                <ul class="list menu__nav-list">
+                    <li class="menu__nav-item">
+                        <a class="menu__nav-link link current" href="./index.html"
+                        >Студия</a>
+                    </li>
+                    <li class="menu__nav-item">
+                        <a class="menu__nav-link link" href="./portfolio.html"
+                        >Портфолио</a>
+                    </li>
+                    <li class="menu__nav-item">
+                        <a class="menu__nav-link link" href="">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="menu__contact">
+            <ul class="menu__contact-list list">
+                <li class="menu__contact-item">
+                    <a class="menu__contact-link link" href="tel:+380961111111">
+                        +38 096 111 11 11
+                    </a>
+                </li>
+                <li class="menu__contact-item">
+                    <a
+                        class="menu__contact-link menu__contact-link--mail link"
+                        href="mailto:info@devstudio.com"
+                    >
+                        info@devstudio.com
+                    </a>
+                </li>
+            </ul>
+            <ul class="menu__social list">
+            <li class="menu__social-item">
+                <a href="#" class="menu__social-link link">Instagram
+                </a>
+            </li>
+            <li class="menu__social-item">
+                <a href="#" class="menu__social-link link ">Twitter
+                </a>
+            </li>
+            <li class="menu__social-item">
+                <a href="#" class="menu__social-link link ">Facebook
+                </a>
+            </li>
+            <li class="menu__social-item">
+                <a href="#" class="menu__social-link link ">LinkedIn
+                </a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    <!-- -------------------------------------Mobile-menu-End---------------------- -->
+        </div>
     </header>
-    <main class="about-menu">
-      <section class="about-section">
-        <div class="container about-container">
-          <ul class="site-nav list site-nav-menu">
-            <li class="button-menu">
-              <button type="button" class="btn btn-item">Все</button>
+    <main>
+      <section class="portfolio section">
+        <div class="container">
+          <div class="filter"></div>
+            <ul class="filter__list list">
+              <li class="filter__item">
+                <button type="button" class="filter__btn">Все</button>
+              </li>
+              <li class="filter__item">
+                <button type="button" class="filter__btn">Веб-сайты</button>
+              </li>
+              <li class="filter__item">
+                <button type="button" class="filter__btn">Приложения</button>
+              </li>
+              <li class="filter__item">
+                <button type="button" class="filter__btn">Дизайн</button>
+              </li>
+              <li class="filter__item">
+                <button type="button" class="filter__btn">Маркетинг</button>
+              </li>
+            </ul>
+          </div>
+        <div class="container works__container">
+          <ul class="works__list list">
+            <li class="works__item">
+              <a href="#" class="works__link">
+                <div class="works__img-container">
+                  <picture>
+                    <source
+                        media="(min-width: 1200px)"
+                        srcset="./images/works/pc/works-1-desktop.webp, ./images//works/pc/works-1-desktop.webp@2x.webp 2x"
+                        type="image/webp"
+                    />
+                    <source
+                        media="(min-width: 1200px)"
+                        srcset="./images/works/pc/jpg/works-1-desktop.jpg, ./images/works/pc/jpg/works-1-desktop@2x.jpg 2x"
+                    />
+                    <source
+                        media="(min-width: 768px)"
+                        srcset="./images/works/talet/works-1-tablet.webp, ./images/works/talet/works-1-tablet@2x.webp 2x"
+                    />
+                    <source
+                        media="(min-width: 768px)"
+                        srcset="./images/works/talet/jpg/works-1-tablet.jpg, ../images/works/talet/jpg/works-1-tablet@2x.jpg 2x"
+                    />
+                    <source
+                        media="(max-width:767px)"
+                        srcset="./images/works/mobile/works-1.webp, ./images/works/mobile/works-1@2x.webp 2x"
+                    />
+                    <source
+                        media="(max-width:767px)"
+                        srcset="./images/works/mobile/jpg/works-1.jpg, ./images/works/mobile/jpg/works-1@2x.jpg 2x"
+                    />
+                    <img src="#" alt="Технокряк">
+                  </picture>
+                    <p  class="works__text">
+                      Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
+                    </p>
+                </div>
+              </a>
+                <div class="works__content">
+                  <h3 class="works__title link">Технокряк</h3>
+                  <p class="works__name">Веб-сайт</p>
+                </div>
             </li>
-            <li class="button-menu">
-              <button type="button" class="btn btn-item">Веб-сайты</button>
+            <li class="works__item">
+              <a href="#" class="works__link">
+                <div class="works__img-container">
+                  <picture>
+                    <source
+                        media="(min-width: 1200px)"
+                        srcset="./images/works/pc/works-2-desktop.webp, ./images//works/pc/works-2-desktop.webp@2x.webp 2x"
+                        type="image/webp"
+                    />
+                    <source
+                        media="(min-width: 1200px)"
+                        srcset="./images/works/pc/jpg/works-2-desktop.jpg, ./images/works/pc/jpg/works-2-desktop@2x.jpg 2x"
+                    />
+                    <source
+                        media="(min-width: 768px)"
+                        srcset="./images/works/talet/works-2-tablet.webp, ./images/works/talet/works-2-tablet@2x.webp 2x"
+                    />
+                    <source
+                        media="(min-width: 768px)"
+                        srcset="./images/works/talet/jpg/works-2-tablet.jpg, ../images/works/talet/jpg/works-2-tablet@2x.jpg 2x"
+                    />
+                    <source
+                        media="(max-width:767px)"
+                        srcset="./images/works/mobile/works-2.webp, ./images/works/mobile/works-2@2x.webp 2x"
+                    />
+                    <source
+                        media="(max-width:767px)"
+                        srcset="./images/works/mobile/jpg/works-2.jpg, ./images/works/mobile/jpg/works-2@2x.jpg 2x"
+                    />
+                    <img src="#" alt="Технокряк">
+                  </picture>
+                    <p class="works__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam totam itaque perspiciatis molestiae illo.</p>
+                </div>
+              </a>
+                <div class="works__content">
+                  <h3 class="works__title">
+                    Постер New Orlean vs Golden Star
+                  </h3>
+                  <p class="works__name">Дизайн</p>
+                </div>
             </li>
-            <li class="button-menu">
-              <button type="button" class="btn btn-item">Приложения</button>
+            <li class="works__item">
+              <a href="#" class="works__link">
+                <div class="works__img-container">
+                  <picture>
+                    <source
+                        media="(min-width: 1200px)"
+                        srcset="./images/works/pc/works-3-desktop.webp, ./images//works/pc/works-3-desktop.webp@2x.webp 2x"
+                        type="image/webp"
+                    />
+                    <source
+                        media="(min-width: 1200px)"
+                        srcset="./images/works/pc/jpg/works-3-desktop.jpg, ./images/works/pc/jpg/works-3-desktop@2x.jpg 2x"
+                    />
+                    <source
+                        media="(min-width: 768px)"
+                        srcset="./images/works/talet/works-3-tablet.webp, ./images/works/talet/works-3-tablet@2x.webp 2x"
+                    />
+                    <source
+                        media="(min-width: 768px)"
+                        srcset="./images/works/talet/jpg/works-3-tablet.jpg, ../images/works/talet/jpg/works-3-tablet@2x.jpg 2x"
+                    />
+                    <source
+                        media="(max-width:767px)"
+                        srcset="./images/works/mobile/works-3.webp, ./images/works/mobile/works-3@2x.webp 2x"
+                    />
+                    <source
+                        media="(max-width:767px)"
+                        srcset="./images/works/mobile/jpg/works-3.jpg, ./images/works/mobile/jpg/works-3@2x.jpg 2x"
+                    />
+                    <img src="#" alt="Технокряк">
+                  </picture>
+                    <p class="works__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero consequatur quas quos repellat doloribus quibusdam?</p>
+                </div>
+              </a>
+                <div class="works__content">
+                  <h3 class="works__title">Ресторан Seafood</h3>
+                  <p class="works__name">Приложение</p>
+                </div>
             </li>
-            <li class="button-menu">
-              <button type="button" class="btn btn-item">Дизайн</button>
+            <li class="works__item">
+              <a href="#" class="works__link">
+                <div class="works__img-container">
+                  <picture>
+                    <source
+                        media="(min-width: 1200px)"
+                        srcset="./images/works/pc/works-4-desktop.webp, ./images//works/pc/works-4-desktop.webp@2x.webp 2x"
+                        type="image/webp"
+                    />
+                    <source
+                        media="(min-width: 1200px)"
+                        srcset="./images/works/pc/jpg/works-4-desktop.jpg, ./images/works/pc/jpg/works-4-desktop@2x.jpg 2x"
+                    />
+                    <source
+                        media="(min-width: 768px)"
+                        srcset="./images/works/talet/works-4-tablet.webp, ./images/works/talet/works-4-tablet@2x.webp 2x"
+                    />
+                    <source
+                        media="(min-width: 768px)"
+                        srcset="./images/works/talet/jpg/works-4-tablet.jpg, ../images/works/talet/jpg/works-4-tablet@2x.jpg 2x"
+                    />
+                    <source
+                        media="(max-width:767px)"
+                        srcset="./images/works/mobile/works-4.webp, ./images/works/mobile/works-4@2x.webp 2x"
+                    />
+                    <source
+                        media="(max-width:767px)"
+                        srcset="./images/works/mobile/jpg/works-4.jpg, ./images/works/mobile/jpg/works-4@2x.jpg 2x"
+                    />
+                    <img src="#" alt="Технокряк">
+                  </picture>
+                    <p class="works__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi laboriosam quibusdam repellat alias, amet similique ab optio quod.</p>
+                </div>
+              </a>
+                <div class="works__content">
+                  <h3 class="works__title">Проект Prime</h3>
+                  <p class="works__name">Маркетинг</p>
+                </div>
             </li>
-            <li class="button-menu">
-              <button type="button" class="btn btn-item">Маркетинг</button>
+            <li class="works__item">
+              <a href="#" class="works__link">
+                <div class="works__img-container">
+                  <picture>
+                    <source
+                        media="(min-width: 1200px)"
+                        srcset="./images/works/pc/works-5-desktop.webp, ./images//works/pc/works-5-desktop.webp@2x.webp 2x"
+                        type="image/webp"
+                    />
+                    <source
+                        media="(min-width: 1200px)"
+                        srcset="./images/works/pc/jpg/works-5-desktop.jpg, ./images/works/pc/jpg/works-5-desktop@2x.jpg 2x"
+                    />
+                    <source
+                        media="(min-width: 768px)"
+                        srcset="./images/works/talet/works-5-tablet.webp, ./images/works/talet/works-5-tablet@2x.webp 2x"
+                    />
+                    <source
+                        media="(min-width: 768px)"
+                        srcset="./images/works/talet/jpg/works-5-tablet.jpg, ../images/works/talet/jpg/works-5-tablet@2x.jpg 2x"
+                    />
+                    <source
+                        media="(max-width:767px)"
+                        srcset="./images/works/mobile/works-5.webp, ./images/works/mobile/works-5@2x.webp 2x"
+                    />
+                    <source
+                        media="(max-width:767px)"
+                        srcset="./images/works/mobile/jpg/works-5.jpg, ./images/works/mobile/jpg/works-5@2x.jpg 2x"
+                    />
+                    <img src="#" alt="Технокряк">
+                </picture>
+                  <p class="works__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est ipsa rerum fugiat! Debitis, dolorum maxime!</p>
+                </div>
+              </a>
+                <div class="works__content">
+                  <h3 class="works__title">Проект Boxes</h3>
+                  <p class="works__name">Приложение</p>
+                </div>
             </li>
-          </ul>
-        </div>
-        <div class="container about-section-container">
-          <ul class="about-section list about-section-block">
-            <li class="border">
-              <div class="border-item">
-                <a href="" class="border-link">
-                  <img
-                    class="image-item"
-                    src="./images/tehno.jpg"
-                    alt="ноутбук"
-                    width="370"
-                    height="294"
-                  />
-                  <p  class="border-text">
-                    Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
-                  </p>
-                </a>                
-              </div>
-              <div class="about-item">
-                <h3 class="about-title about-title-item">Технокряк</h3>
-                <p class="about-text about-text-item">Веб-сайт</p>
-              </div>
+            <li class="works__item">
+              <a href="#" class="works__link">
+                <div class="works__img-container">
+                  <picture>
+                    <source
+                        media="(min-width: 1200px)"
+                        srcset="./images/works/pc/works-6-desktop.webp, ./images//works/pc/works-6-desktop.webp@2x.webp 2x"
+                        type="image/webp"
+                    />
+                    <source
+                        media="(min-width: 1200px)"
+                        srcset="./images/works/pc/jpg/works-6-desktop.jpg, ./images/works/pc/jpg/works-6-desktop@2x.jpg 2x"
+                    />
+                    <source
+                        media="(min-width: 768px)"
+                        srcset="./images/works/talet/works-6-tablet.webp, ./images/works/talet/works-6-tablet@2x.webp 2x"
+                    />
+                    <source
+                        media="(min-width: 768px)"
+                        srcset="./images/works/talet/jpg/works-6-tablet.jpg, ../images/works/talet/jpg/works-6-tablet@2x.jpg 2x"
+                    />
+                    <source
+                        media="(max-width:767px)"
+                        srcset="./images/works/mobile/works-6.webp, ./images/works/mobile/works-6@2x.webp 2x"
+                    />
+                    <source
+                        media="(max-width:767px)"
+                        srcset="./images/works/mobile/jpg/works-6.jpg, ./images/works/mobile/jpg/works-6@2x.jpg 2x"
+                    />
+                    <img src="#" alt="Технокряк">
+                  </picture>
+                    <p class="works__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid perferendis enim dignissimos fuga. Fugiat, non.</p>
+                </div>
+              </a>
+                <div class="works__content">
+                  <h3 class="works__title">
+                    Inspiration has no Borders
+                  </h3>
+                  <p class="works__name">Веб-сайт</p>
+                </div>
             </li>
-            <li class="border">
-              <div class="border-item">
-                <a href="" class="border-link">
-                  <img
-                    class="image-item"
-                    src="./images/poster.jpg"
-                    alt="постер баскетбол"
-                    width="370"
-                    height="294"
-                  />
-                </a>
-                <p class="border-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam totam itaque perspiciatis molestiae illo.</p>
-              </div>
-              <div class="about-item">
-                <h3 class="about-title about-title-item">
-                  Постер New Orlean vs Golden Star
-                </h3>
-                <p class="about-text about-text-item">Дизайн</p>
-              </div>
+            <li class="works__item">
+              <a href="#" class="works__link">
+                <div class="works__img-container">
+                  <picture>
+                    <source
+                        media="(min-width: 1200px)"
+                        srcset="./images/works/pc/works-7-desktop.webp, ./images//works/pc/works-7-desktop.webp@2x.webp 2x"
+                        type="image/webp"
+                    />
+                    <source
+                        media="(min-width: 1200px)"
+                        srcset="./images/works/pc/jpg/works-7-desktop.jpg, ./images/works/pc/jpg/works-7-desktop@2x.jpg 2x"
+                    />
+                    <source
+                        media="(min-width: 768px)"
+                        srcset="./images/works/talet/works-7-tablet.webp, ./images/works/talet/works-7-tablet@2x.webp 2x"
+                    />
+                    <source
+                        media="(min-width: 768px)"
+                        srcset="./images/works/talet/jpg/works-7-tablet.jpg, ../images/works/talet/jpg/works-7-tablet@2x.jpg 2x"
+                    />
+                    <source
+                        media="(max-width:767px)"
+                        srcset="./images/works/mobile/works-7.webp, ./images/works/mobile/works-7@2x.webp 2x"
+                    />
+                    <source
+                        media="(max-width:767px)"
+                        srcset="./images/works/mobile/jpg/works-7.jpg, ./images/works/mobile/jpg/works-7@2x.jpg 2x"
+                    />
+                    <img src="#" alt="Технокряк">
+                  </picture>
+                    <p class="works__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut vel totam aut placeat neque temporibus.</p>
+                </div>
+              </a>
+                <div class="works__content">
+                  <h3 class="works__title">
+                    Издание Limited Edition
+                  </h3>
+                  <p class="works__name">Дизайн</p>
+                </div>
             </li>
-            <li class="border">
-              <div class="border-item">
-                <a href="" class="border-link">
-                  <img
-                    class="image-item"
-                    src="./images/rest.jpg"
-                    alt="Рыбный ресторан"
-                    width="370"
-                    height="294"
-                  />
-                </a>
-                <p class="border-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero consequatur quas quos repellat doloribus quibusdam?</p>
-              </div>
-              <div class="about-item">
-                <h3 class="about-title about-title-item">Ресторан Seafood</h3>
-                <p class="about-text about-text-item">Приложение</p>
-              </div>
+            <li class="works__item">
+              <a href="#" class="works__link">
+                <div class="works__img-container">
+                  <picture>
+                    <source
+                        media="(min-width: 1200px)"
+                        srcset="./images/works/pc/works-8-desktop.webp, ./images//works/pc/works-8-desktop.webp@2x.webp 2x"
+                        type="image/webp"
+                    />
+                    <source
+                        media="(min-width: 1200px)"
+                        srcset="./images/works/pc/jpg/works-8-desktop.jpg, ./images/works/pc/jpg/works-8-desktop@2x.jpg 2x"
+                    />
+                    <source
+                        media="(min-width: 768px)"
+                        srcset="./images/works/talet/works-8-tablet.webp, ./images/works/talet/works-8-tablet@2x.webp 2x"
+                    />
+                    <source
+                        media="(min-width: 768px)"
+                        srcset="./images/works/talet/jpg/works-8-tablet.jpg, ../images/works/talet/jpg/works-8-tablet@2x.jpg 2x"
+                    />
+                    <source
+                        media="(max-width:767px)"
+                        srcset="./images/works/mobile/works-8.webp, ./images/works/mobile/works-8@2x.webp 2x"
+                    />
+                    <source
+                        media="(max-width:767px)"
+                        srcset="./images/works/mobile/jpg/works-8.jpg, ./images/works/mobile/jpg/works-8@2x.jpg 2x"
+                    />
+                    <img src="#" alt="Технокряк">
+                </picture>
+                  <p class="works__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis asperiores possimus recusandae natus quas delectus?</p>
+                </div>
+              </a>
+                <div class="works__content">
+                  <h3 class="works__title">Проект LAB</h3>
+                  <p class="works__name">Маркетинг</p>
+                </div>
             </li>
-            <li class="border">
-              <div class="border-item">
-                <a href="" class="border-link">
-                  <img
-                    class="image-item"
-                    src="./images/sound.jpg"
-                    alt="Наушники"
-                    width="370"
-                    height="294"
-                  />
-                </a>
-                <p class="border-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi laboriosam quibusdam repellat alias, amet similique ab optio quod.</p>
-              </div>
-              <div class="about-item">
-                <h3 class="about-title about-title-item">Проект Prime</h3>
-                <p class="about-text about-text-item">Маркетинг</p>
-              </div>
-            </li>
-            <li class="border">
-              <div class="border-item">
-                <a href="" class="border-link">
-                  <img
-                    class="image-item"
-                    src="./images/box.jpg"
-                    alt="коробки"
-                    width="370"
-                    height="294"
-                  />
-                </a>
-                <p class="border-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est ipsa rerum fugiat! Debitis, dolorum maxime!</p>
-              </div>
-              <div class="about-item">
-                <h3 class="about-title about-title-item">Проект Boxes</h3>
-                <p class="about-text about-text-item">Приложение</p>
-              </div>
-            </li>
-            <li class="border">
-              <div class="border-item">
-                <a href="" class="border-link">
-                  <img
-                    class="image-item"
-                    src="./images/comp.jpg"
-                    alt="Компьютер"
-                    width="370"
-                    height="294"
-                  />
-                </a>
-                <p class="border-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid perferendis enim dignissimos fuga. Fugiat, non.</p>
-              </div>
-              <div class="about-item">
-                <h3 class="about-title about-title-item">
-                  Inspiration has no Borders
-                </h3>
-                <p class="about-text about-text-item">Веб-сайт</p>
-              </div>
-            </li>
-            <li class="border">
-              <div class="border-item">
-                <a href="" class="border-link">
-                  <img
-                    class="image-item"
-                    src="./images/journale.jpg"
-                    alt="Издание"
-                    width="370"
-                    height="294"
-                  />
-                </a>
-                <p class="border-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut vel totam aut placeat neque temporibus.</p>
-              </div>
-              <div class="about-item">
-                <h3 class="about-title about-title-item">
-                  Издание Limited Edition
-                </h3>
-                <p class="about-text about-text-item">Дизайн</p>
-              </div>
-            </li>
-            <li class="border">
-              <div class="border-item">
-                <a href="" class="border-link">
-                  <img
-                    class="image-item"
-                    src="./images/lab.jpg"
-                    alt="Проджект Лэб"
-                    width="370"
-                    height="294"
-                  />
-                </a>
-                <p class="border-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis asperiores possimus recusandae natus quas delectus?</p>
-              </div>
-              <div class="about-item">
-                <h3 class="about-title about-title-item">Проект LAB</h3>
-                <p class="about-text about-text-item">Маркетинг</p>
-              </div>
-            </li>
-            <li class="border">
-              <div class="border-item">
-                <a href="" class="border-link">
-                  <img
-                    class="image-item"
-                    src="./images/groving.jpg"
-                    alt="Поиск в интернете"
-                    width="370"
-                    height="294"
-                  />
-                </a>
-                <p class="border-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae debitis provident cupiditate quas, laborum necessitatibus!</p>
-              </div>
-              <div class="about-item">
-                <h3 class="about-title about-title-item">Growing Business</h3>
-                <p class="about-text about-text-item">Приложение</p>
-              </div>
+            <li class="works__item">
+              <a href="#" class="works__link">
+                <div class="works__img-container">
+                  <picture>
+                    <source
+                        media="(min-width: 1200px)"
+                        srcset="./images/works/pc/works-9-desktop.webp, ./images//works/pc/works-9-desktop.webp@2x.webp 2x"
+                        type="image/webp"
+                    />
+                    <source
+                        media="(min-width: 1200px)"
+                        srcset="./images/works/pc/jpg/works-9-desktop.jpg, ./images/works/pc/jpg/works-9-desktop@2x.jpg 2x"
+                    />
+                    <source
+                        media="(min-width: 768px)"
+                        srcset="./images/works/talet/works-9-tablet.webp, ./images/works/talet/works-9-tablet@2x.webp 2x"
+                    />
+                    <source
+                        media="(min-width: 768px)"
+                        srcset="./images/works/talet/jpg/works-9-tablet.jpg, ../images/works/talet/jpg/works-9-tablet@2x.jpg 2x"
+                    />
+                    <source
+                        media="(max-width:767px)"
+                        srcset="./images/works/mobile/works-9.webp, ./images/works/mobile/works-9@2x.webp 2x"
+                    />
+                    <source
+                        media="(max-width:767px)"
+                        srcset="./images/works/mobile/jpg/works-9.jpg, ./images/works/mobile/jpg/works-9@2x.jpg 2x"
+                    />
+                    <img src="#" alt="Технокряк">
+                  </picture>
+                    <p class="works__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae debitis provident cupiditate quas, laborum necessitatibus!</p>
+                </div>
+              </a>
+                <div class="works__content">
+                  <h3 class="works__title">Growing Business</h3>
+                  <p class="works__name">Приложение</p>
+                </div>
             </li>
           </ul>
         </div>
       </section>
     </main>
-    <footer class="type-footer">
-      <section class="section-footer">
-      <div class="container main-footer-container">
-        <div class="contact-info">
-          <a href="./index.html" class="footer-logo link footer-logo-position"
-            ><span class="logo-web ">Web</span>Studio
+    <footer class="footer">
+      <section class="footer__section">
+      <div class="container footer__container">
+          <div class="footer__container-contact">
+          <a class="footer__logo link" href="./index.html" 
+              ><span class="logo-web ">Web</span>Studio
           </a>      
-          <address class="address-contact">                 
-            <p class="street">г. Киев, пр-т Леси Украинки, 26</p>
+          <address class="footer__address">                 
+              <p class="footer__address-street">г. Киев, пр-т Леси Украинки, 26</p>
           </address>
-            <a class="contact-footer link" href="mailto:info@example.com"
-                >info@example.com</a
-              >
-              <a class="contact-footer link" href="tel:+380991111111"
-                >+380 99 111 11 11</a
-              >
-        </div>  
-        <div class="footer-icon-section">
-          <h3 class="footer-social">Присоединяйтесь</h3>
-            <ul class="footer-social-title">
-              <li class="footer-icon list">
-                <a href="" class="footer-link">
-                  <svg 
-                    class="icon-bottom"
-                    width=20
-                    height=20
+          <ul class="footer__contacts list">
+              <li class="footer__contacts-item">
+                  <a class="footer__link link" href="mailto:info@example.com"
+                      >info@example.com</a
                   >
-                    <use href="./images/icon.svg#icon-instagram"></use>
-                  </svg>
-                </a>                                      
               </li>
-              <li class="footer-icon list">
-                <a href="" class="footer-link">
-                  <svg 
-                    class="icon-bottom"
-                    width=20
-                    height=20
+              <li class="footer__contacts-item">
+                  <a class="footer__link link" href="tel:+380991111111"
+                      >+380 99 111 11 11</a
                   >
-                    <use href="./images/icon.svg#icon-twitter"></use>
-                  </svg>
-                </a>
               </li>
-              <li class="footer-icon list">
-                <a href="" class="footer-link">
+          </ul>
+          </div>  
+          <div class="footer__social-container">
+          <h3 class="footer__social-title">Присоединяйтесь</h3>
+              <ul class="footer__social-list">
+              <li class="footer__social-item list">
+                  <a href="" class="footer__social-link">
                   <svg 
-                    class="icon-bottom"
-                    width=20
-                    height=20
+                      class="footer__social-icon"
+                      width=20
+                      height=20
                   >
-                    <use href="./images/icon.svg#icon-facebook"></use>
+                      <use href="./images/icon.svg#icon-instagram"></use>
                   </svg>
-                </a>
+                  </a>                                      
               </li>
-              <li class="footer-icon list">
-                <a href="" class="footer-link">
+              <li class="footer__social-item list">
+                  <a href="" class="footer__social-link">
                   <svg 
-                    class="icon-bottom"
-                    width=20
-                    height=20
+                      class="footer__social-icon"
+                      width=20
+                      height=20
                   >
-                    <use href="./images/icon.svg#icon-linkedin"></use>
+                      <use href="./images/icon.svg#icon-twitter"></use>
                   </svg>
-                </a>
+                  </a>
               </li>
-            </ul>
-        </div>
-        <div class="footer-form">
-          <label class="footer-title-form">Подпишитесь на рассылку
-              <span class="footer-form-wraper">
-                  <input type="mail" class="footer-form-input" name="mailing" placeholder="E-mail">
-                  <button class="footer-button-mailing">Подписаться
-                      <svg class="footer-pictures"
-                      width=24
-                      height=24
-                      >
-                      <use href="./images/icon.svg#icon-send">
-                      </use>
-                      </svg>
-                  </button>
-              </span>
-          </label>
-      </div>
+              <li class="footer__social-item list">
+                  <a href="" class="footer__social-link">
+                  <svg 
+                      class="footer__social-icon"
+                      width=20
+                      height=20
+                  >
+                      <use href="./images/icon.svg#icon-facebook"></use>
+                  </svg>
+                  </a>
+              </li>
+              <li class="footer__social-item list">
+                  <a href="" class="footer__social-link">
+                  <svg 
+                      class="footer__social-icon"
+                      width=20
+                      height=20
+                  >
+                      <use href="./images/icon.svg#icon-linkedin"></use>
+                  </svg>
+                  </a>
+              </li>
+              </ul>
+          </div>
+          <form class="footer__form" autocomplete="off">
+          <div class="footer__form-container">
+              <label class="footer__form-title">Подпишитесь на рассылку
+                  <span class="footer__form-wraper">
+                      <input type="mail" class="footer__form-input" name="mailing" placeholder="E-mail">
+                      <button class="footer__form-button">Подписаться
+                          <svg class="footer__form-pictures"
+                          width=24
+                          height=24
+                          >
+                          <use href="./images/icon.svg#icon-send">
+                          </use>
+                          </svg>
+                      </button>
+                  </span>
+              </label>
+          </div>
+      </form>
       </div>    
       </section>
-    </footer>
+      </footer>
   </body>
 </html>

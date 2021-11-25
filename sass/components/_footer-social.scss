@@ -1,43 +1,47 @@
-
-.footer-icon-section{
-    display: block;
-    align-items: center;
-    justify-content: center;
-}
-  
-  .footer-social{
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--primary-title-collor);
-    margin-bottom: 20px;
-    padding-top: 0px;
-    justify-content: center;
-    align-items: center;
-    }
-    
-  .footer-social-title{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.footer__social-container{
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
   }
-  
-  .footer-icon:not(:last-child){
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
+}
+
+.footer__social-title {
+  margin-bottom: 20px;
+  color: var(--primary-title-collor);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__social-list{
+  display: flex;
+  justify-content: center;
+}
+
+.footer__social-item{
+  &:not(:last-child) {
     margin-right: 10px;
   }
+}
+
+
   
-  .footer-link{
-    display: flex;
+  .footer__social-link{
+    @include centeredFlex();
     border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
+    min-width: 44px;
+    min-height: 44px;
     color: var(--primary-title-collor);
     background: rgba(255, 255, 255, 0.1);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms $animation-cubic, 
+    background-color 250ms $animation-cubic;
 
     &:hover, 
     &:focus{
@@ -45,13 +49,13 @@
       color: var(--primary-title-collor);
     }
   }
-  
-  .icon-bottom{
+
+  .footer__social-icon{
     fill: currentColor;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    .footer-link:hover &
-    .footer-link:focus &{
+    .footer__social-link:hover &
+    .footer__social-link:focus &{
       fill: var(--primary-title-collor);
     }
   }

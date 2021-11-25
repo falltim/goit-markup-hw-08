@@ -1,6 +1,8 @@
 //UTILS
 @import './utils/variables';
 @import'./utils/vissualy-hidden';
+@import'./utils/mixins';
+@import'./utils/placeholder';
 
 
 //BASE
@@ -15,10 +17,11 @@
 @import './components/logo';
 @import './components/backdrop';
 @import './components/modal';
-@import './components/modal-form';
 @import './components/footer-form';
 @import './components/footer-social';
 @import './components/social-link';
+@import'./components/mobile-menu';
+@import'./components/section';
 
 
 

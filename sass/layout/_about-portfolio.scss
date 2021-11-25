@@ -1,75 +1,59 @@
-.about-menu{
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-  
-  .about-section{
-    display: block;
-    flex-direction: row;
-  }
-  
-  .button-menu:not(:last-child){
-    margin-right: 8px;
-  }
-  
-  .site-nav{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-  }
-  
-  .btn {
-    font-family: Roboto;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--primary-text-color);
-    border: hidden;
-    border-radius: 4px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
-    &:hover,
-    &:focus {
-      background-color: var(--accent-color);
-      color: var(--primary-title-collor);
-      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    }
-  }
-  
-  .btn-item{
-    padding: 6px 22px 6px 22px;
-  }
-  
-  .about-title {
-    font-weight: 700;
-    line-height: 2;
-    font-size: 18px;
-    letter-spacing: 0.06em;
-    color: var(--primary-text-color);
-  }
-  
-  .about-text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.03em;
-    color: var(--second-text-color);
-  }
-  
-  .about-section{
-    display: flex;
+.filter__list {
+  display: flex;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 40px;
     flex-wrap: wrap;
-    margin-right: -30px;  
-    margin-bottom: -30px;
   }
 
-  .about-item{
-    padding: 20px 24px 20px 24px;
-    background: #FFFFFF;
-    border: 1px solid #EEEEEE;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 30px;
+    justify-content: center;
   }
-  .about-title-item{
-    margin-bottom: 4px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    justify-content: center;
   }
+}
+
+.filter__item {
+  @media screen and (max-width: 767px) {
+    margin: 7px 4px;
+  }
+
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+}
+
+.filter__btn {
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: none;
+  color: var(--primary-text-collor);
+  background-color: var(--button-bg);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  transition: color 250ms $animation-cubic,
+  background-color 250ms $animation-cubic, 
+  box-shadow 250ms $animation-cubic;
+
+  &:hover,
+  &:focus {
+    color: var(--primary-title-collor);
+    background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+  
+
+  
+
+  
