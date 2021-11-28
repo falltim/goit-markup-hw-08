@@ -14,6 +14,7 @@
     z-index: 999;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
   
 .mobile-menu.is-open{
@@ -79,7 +80,6 @@
         margin-bottom: 32px;
       }
   }
-  
   
 .menu__contact-link {
     font-weight: 500;
